@@ -1,0 +1,374 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portifólio</title>
+</head>
+<body>
+    <nav class="navegacao">
+     <ul class="Menu">
+        <li>
+       <a href="#inicio">Início</a>
+        </li>
+             <li>
+       <a href="#sobre">Sobre</a>
+        </li>
+             <li>
+       <a href="#projetos">Projetos</a>
+        </li>
+             <li>
+       <a href="#contatos">Contatos</a>
+        </li>
+    </ul>
+    </nav>
+    <main id="inicio"class="cabecalho">
+        <div>
+            <img src="foto.jpg.jpg" alt="Foto de Raylane" class="foto-perfil">
+            <h1>Raylane Cristina</h1>
+            <p>Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+        </div>
+
+    </main>
+    <section id="sobre" class="sobre">
+       <h2 class="sobre-titulo">Sobre Mim</h2> 
+       <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+            Olá, me chamo Raylane,tenho 25 anos e estou no 4º semestre de Análise e Desenvolvimento de Sistemas. Gosto muito da área de tecnologia e de aprender coisas novas. Tenho interesse em desenvolvimento web, banco de dados e estou sempre buscando melhorar minhas habilidades para crescer na área e criar projetos que façam a diferença.
+         </p>
+       </div>
+       </section>
+    <section id="=projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                <h3 class="info-projetos" Habilidades>
+                 <p class="info-projetos"p>
+                
+            <div class="projetos-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+                <h3 class="info-projetos" Habilidades>
+                 <p class="info-projetos"p>
+
+            <div class="projetos-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                <h3 class="info-projetos" Habilidades>
+                 <p class="info-projetos"p></div>
+                    <section id="experiencia" class="experiencia">
+  <h2 class="secao-titulo">Experiência Profissional</h2>
+  <div class="experiencia-caixa">
+    <div class="experiencia-item">
+      <h3>Buscando primeira oportunidade na área de TI</h3>
+      <p>Atualmente trabalho com vendas e atendimento ao cliente. Procuro melhorar minhas habilidades e desenvolver projetos e aplicar meus conhecimentos na areá.</p>
+    </div>
+  </div>
+</section>
+
+          
+
+    </section>
+    <section id="contatos" class="contatos">
+    </section>
+        <h2 class="contatos-titulos">Contatos</h2>
+        <form class="formulario-contato id=formulario">
+            <div class="nome-form">
+                 <input placeholder="Nome"> <class="campo-form">
+            </div>
+                <div>
+                    <t<section id="contatos" class="contatos">
+  <h2 class="contatos-titulos">Contatos</h2>
+
+  <div class="info-contato">
+    <p><strong>📧 E-mail:</strong> raylane@gmail.com</p>
+    <p><strong>📱 Telefone:</strong> (61)99580000</p>
+  </div>
+
+  <form class="formulario-contato" id="formulario">
+    <div class="nome-form">
+      <input placeholder="Nome" class="campo-form">
+    </div>
+    <div>
+      <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+    </div>
+  </form>
+</section>
+
+
+            
+
+        </form>
+
+    </section>
+
+</body>
+
+
+
+CSS
+
+* {
+ margin: 0;
+     padding: 0;
+ box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --roxo: #7c3aed; 
+   --verde-agua: #4ade80; 
+       --fundo: #f8f9fa;
+  --texto: #222;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: var(--fundo);
+  color: var(--texto);
+}
+.navegacao {
+  background-color: var(--roxo);
+      padding: 15px 0;
+ position: sticky;
+     top: 0;
+  z-index: 10;
+}
+
+.Menu {
+  display: flex;
+justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+.Menu a {
+color: white;
+  text-decoration: none;
+  font-weight: 500;
+   transition: 0.3s;
+}
+.Menu a:hover {
+  color: var(--verde-agua);
+     text-shadow: 0 0 5px var(--verde-agua);
+}
+.cabecalho {
+     text-align: center;
+  padding: 60px 20px;
+   animation: fadeIn 1s ease;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+        border: 4px solid var(--verde-agua);
+     box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+  margin-bottom: 20px;
+}
+.cabecalho h1 {
+  color: var(--roxo);
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  }
+
+.cabecalho p {
+  color: #555;
+  }
+.sobre {
+  padding: 60px 20px;
+background-color: white;
+  text-align: center;
+}
+.sobre-titulo {
+color: var(--roxo);
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+.sobre-paragrafo {
+max-width: 700px;
+     margin: 0 auto;
+color: #444;
+  line-height: 1.6;
+}
+.experiencia {
+  background: linear-gradient(135deg, #a855f7, #38e4ae); 
+  color: #fff;
+  text-align: center;
+     display: flex;
+flex-direction: column;
+  align-items: center;
+    }
+.experiencia .secao-titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+     letter-spacing: 1px;
+  width: 100%;
+      }
+.experiencia-caixa {
+background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(8px);
+  max-width: 900px;
+  text-align: left;
+}
+.projetos {
+  padding: 60px 20px;
+  background-color: #f4f3ff;
+text-align: center;
+   }
+.projetos-titulo {
+  color: var(--roxo);
+        font-size: 1.8em;
+margin-bottom: 40px;
+}
+.projetos-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.projetos-card {
+  background: white;
+  border: 2px solid var(--verde-agua);
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.projetos-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.projetos-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.projetos-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.projetos-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+ }
+
+.projetos-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+ }
+
+.projetos-card h3 {
+  color: var(--roxo);
+  margin-bottom: 8px
+   }
+
+.info-projetos {
+  color: #555;
+  font-size: 0.9em;
+   }
+.contatos {
+    padding: 60px 20px;
+     background-color: white;
+  text-align: center;
+  }
+.contatos-titulos {
+  color: var(--roxo);
+  font-size: 1.8em;
+      margin-bottom: 25px;
+}
+.formulario-contato {
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+input,
+textarea {
+  width: 300px;
+padding: 10px;
+  border: 2px solid var(--verde-agua);
+       border-radius: 10px;
+  outline: none;
+  font-size: 1em;
+  transition: 0.3s;
+    }
+input:focus,
+textarea:focus {
+  border-color: var(--roxo);
+box-shadow: 0 0 8px var(--verde-agua);
+   }
+textarea {
+ height: 100px;
+  resize: none;
+    }
+.contatos {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+    }
+
+.botao-enviar {
+  background: linear-gradient(90deg, var(--roxo), var(--verde-agua));
+color: white;
+  border: none;
+     border-radius: 10px;
+     padding: 12px 25px;
+  font-size: 1em;
+      cursor: pointer;
+     font-weight: 600;
+  transition: 0.4s;
+    }
+.botao-enviar:hover {
+  transform: scale(1.05);
+box-shadow: 0 0 15px var(--verde-agua);
+  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+ to { opacity: 1; }
+      }
+@keyframes fadeUp {
+  from {
+opacity: 0;
+    transform: translateY(30px);
+}
+  to {
+ opacity: 1;
+    transform: translateY(0);
+  }
+    }
+@media (max-width: 768px) {
+  .Menu {
+ flex-direction: column;
+    gap: 15px;
+     }
+.projetos-caixa {
+  flex-direction: column;
+  }
+input,
+  textarea {
+        width: 90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+</html>
